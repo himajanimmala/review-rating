@@ -1,0 +1,23 @@
+<title>Review - Ratings</title>
+
+{% extends 'back.html' %}
+{% block body %}<br>
+
+<h2 style="text-align: center"> About the Review - Ratings </h2>
+
+<h4 class="navbar navbar-light" style="background-color: #e3f2fd;"> Review - Ratings </h4>
+<p> There are times when a user writes Good, Nice App or any other positive text, in the review and gives 1-star rating, here the semantics of review text does not match rating.
+    To fill-up this gap, built this application to identify such ratings where review text is good, but rating is negative- so that the support team can point this to users.
+    In this data app - the user will upload a csv and hit Process, it will display the <b>reviews where the content doesn’t match ratings</b> as result.</p>
+
+
+<style>
+body {
+  background-image: url('https://img.freepik.com/free-vector/organic-flat-feedback-concept_52683-62653.jpg?');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 103% 115%;
+}
+</style>
+
+{% endblock body %}
