@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<div class="content"><br>
+    <h1 style="text-align: center"><i>Review - Ratings</i></h1>
+    <h4 class="navbar navbar-light" style="background-color: #e3f2fd;">
+                <b>Note: Please upload a csv file for which, you would like to display the reviews where the content doesn’t match ratings. </b></h4> <br>
+    <div class="form">
+        <form action="/Process_file" method="POST" enctype=multipart/form-data>
+             <label for="uploaded_file"> <b>Upload a csv file: </b></label>
+                  <input type="file" name="uploaded_file" id="uploaded_file" value="" required>
+                  <input type="submit" value="Process file">
+        </form>
+    </div>
+</div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+{% endblock body %}
+        
+                        
